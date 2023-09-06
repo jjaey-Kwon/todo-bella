@@ -13,7 +13,7 @@
         align-items: center; // 세로 중앙 정렬
         svg {
             // 아이콘
-            font-size: 1,5rem;
+            font-size: 1.5rem;
         }
         .text {
             margin-left: 0.5rem;
@@ -22,7 +22,7 @@
         // 체크되었을 때 보여 줄 스타일
         &.checked {
             svg {
-            color: #22b8cf;
+            color: #8764fa;
             }
             .text {
                 color: #adb5bd;
@@ -30,7 +30,18 @@
             }
         }
     }
-
+    .edit{
+        padding: 10px;
+        display: flex;
+        align-items: center;
+        font-size: 1.5rem;
+        color: #9987ff;
+        cursor: pointer;
+        &:hover {
+            color: #bf87ff;
+        }
+    }
+    
     .remove {
         display: flex;
         align-items: center;
@@ -41,6 +52,8 @@
             color: #ff8787;
         }
     }
+
+
 
     // 엘리먼트 사이사이에 테두리를 넣어 줌
     & + & {
